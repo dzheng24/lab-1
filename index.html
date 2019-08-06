@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class 1 Lab</title>
+    <style>
+        h1{
+            color: blue;
+            background-color: red;
+            text-align: center;
+            font-size: 40px;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img />
+        <nav>
+        </nav>
+    </header>
+
+    <main>
+        <header>
+            <h1>Class 1 Lab</h1>
+        </header>
+        <section>
+            <p style="color:blue; background-color: yellow;">What is your name?</p> 
+            <p style="color:yellow; background-color: green;">Where are you from?</p>
+            <P style="color:red; background-color: blue;">Would you like to make a reservation with us?</P>
+            <p style="color:green; background-color: yellow;">Do you have any peanut allergies?</p>
+        </section>
+
+        <div>
+
+
+        </div>
+
+        <article>
+
+
+
+        </article>
+
+    </main>
+
+    <footer>
+        &copy; 2019 David
+    </footer>
+
+    <script>
+        var name = prompt ("What is your name?");
+        console.log(name);
+        alert ("Welcome to David's Restaurant, " + name + "!");
+
+        var place = prompt ("Where are you from, " + name + "?");
+        console.log(place);
+       
+
+        var reservation = prompt ("Would youl like to make a reservation with us? Please answer 'yes' or 'no'");
+        console.log(reservation);
+        if (reservation === "yes"){
+            alert("Sounds good, " + name +", " + "we will save a table for ya");
+        }
+        else {
+            alert("That's fine, you can also always call or come down");
+        }
+        
+        var allergy = prompt ("Do you have any peanut allergies? Answer 'yes' or 'no'");
+        console.log(allergy);
+        if (allergy === "yes"){
+            alert("Thank you, our chefs will be using vegetable oils instead of peanut oils");
+        }
+        else {
+            alert("Cool!");
+        }
+
+        if (reservation === "yes" && allergy === "yes"){
+            
+            alert("Ok, "+ name + " from " + place + " ," + "we'll make sure your table is ready, and we use non-peanut products");
+        }
+        if (reservation === "yes" && allergy === "no"){
+
+            alert("Ok, "+ name + " from " + place + " ," + "we'll make sure your table is ready.");
+        }
+
+        if (reservation === "no" && allergy === "yes"){
+
+            alert("Ok, " + name + " from " + place + " ," + "we won't be using peanut products in our cooking");
+        }
+
+
+        
+
+
+    </script>
+
+
+</body>
+</html>
